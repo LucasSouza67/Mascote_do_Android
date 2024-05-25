@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'android';
+    src: url("../fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor1: #35B879;
+    --cor2: #298F5E;
+    --cor3: #40DB90;
+    --cor4: #1E6643;
+    --cor5: #123D28;
+
+    --font_padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --font_destaque: 'Bebas Neue', cursive; 
+    --font_android: 'android', cursive; 
+}
+
+
+body{
+    background-color: var(--cor3);
+    margin: 0px;
+    color: white;
+    font-family: var(--font_padrao);
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
+    margin: 0px;
+    padding: 2px;
+}
+
+li{
+    list-style: none;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--font_destaque);
+    font-size: 50px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 0px black;
+}
+
+header > h2 {
+    text-align: center;
+    font-family: var(--font_destaque);
+    margin-top: -10px;
+}
+
+nav img{
+    width: 30px;
+    margin-left: 10px;
+    margin-top: -10px;
+    background-color: white;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+nav > ul > li{
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    margin: 3px;
+    background-color: var(--cor1);
+    padding: 5px;
+    color: black;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    text-align: justify;
+}
+
+main > h1{
+    font-size: 30px;
+    color: var(--cor4);
+    font-family: var(--font_android);
+}
+
+main > h2{
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 0.267), white);
+    color: var(--cor2);
+    font-family: var(--font_android);
+}
+
+main p{
+    text-indent: 30px;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-size: large;
+    font-weight: 800;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+    font-size: large;
+    font-weight: 800;
+    background-color: var(--cor1);
+    border-radius: 4px;
+}
+
+main img{
+    width: 100%;
+}
+
+#boneco{
+    margin-left: auto;
+    width: 20%;
+    margin-left: 400px;
+}
+
+#video{
+    background-color: var(--cor4);
+    position: relative;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+}
+
+#video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#box_info{
+    background-color: rgb(13, 243, 166);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px  black;
+}
+
+#box_info > h3{
+    background-color: var(--cor4);
+    padding: 8px;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#box_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#box_link > ul{
+    margin-right: 100px;
+    margin-left: -10px;
+}
+
+#box_link  a{
+    color: black;
+    font-size: medium;
+}
+
+footer{
+    background-color: var(--cor4);
+}
+
+footer > p{
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    margin: 2px;
+    color: var(--cor4);
+    background-color: rgba(255, 255, 255, 0.658);
+    margin: 5px;
+    padding: 2px;
+}
+
+@media (max-width:678px) {
+    #boneco{
+        width: 60%;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:678px) {
+    nav > ul > img{
+        width: 2rem;
+        margin-left: 1rem;
+        margin-top: -1rem;
+        background-color: white;
+    }
+    
+    nav > ul > li{
+        margin-right: 0.425rem;
+        text-decoration: none;
+    }  
+}
+
+@media (max-width:678px) {
+    #box_link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+    }
+}
+
