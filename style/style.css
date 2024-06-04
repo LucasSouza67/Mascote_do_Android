@@ -208,33 +208,81 @@ footer a:hover{
     padding: 2px;
 }
 
-@media (max-width:678px) {
+@media (max-width: 678px) {
     #boneco{
         width: 60%;
         margin-left: 40px;
     }
-}
-
-@media (max-width:678px) {
     nav > ul > img{
         width: 2rem;
         margin-left: 1rem;
         margin-top: -1rem;
         background-color: white;
     }
-    
     nav > ul > li{
         margin-right: 0.425rem;
         text-decoration: none;
     }  
-}
-
-@media (max-width:678px) {
     #box_link{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+    header h1{
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+    }
+    header h2{
+        font-size: 1.4rem;
+    }
+    nav > ul > img{
+        width: 0rem;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -1rem;
+    }
+    nav > ul > li{
+        margin-bottom: 0.4rem;
+        margin-left: -1rem;
+        text-decoration: none;
+    }  
+    main h1{
+        font-size: 1.2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    main h2{
+        font-size: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    main p{
+        font-size: 0.8rem;
+    }
+    main a{
+        font-size: 1rem;
+    }
+    #boneco{
+        width: 60%;
+        margin-left: 2.5rem;
+    }
+    #box_link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.625rem;
+    }
+    footer p a{
+        font-size: 0.8rem;
     }
 }
 
